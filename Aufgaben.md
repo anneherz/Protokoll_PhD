@@ -1,7 +1,10 @@
 - SQL DB: unnötige Spalten entfernen
 - PHP Export: Namen der Spalten umbenennen in lesbare Begriffe
-- zusätzliche Kategorien für linke Spalte (nur Bilder, nur Memphis etc.) 
-- generelles Design anpassen, Logo, Metadaten etc.
+--> für persons (v.l.n.r. id_persons = ID; name_translit = Person’s name; name = Persons’s name (translit); other_name = Person’s name (other); gender = gender; person_no_ranke = reference; notes = notes; to_do = x (nicht aus sql db löschen); link_bonner_totenbuch = x (aus sql db löschen); link_trismegistos = x (aus sql db löschen); link_tla = x (aus sql db löschen)
+--> für objects (v.l.n.r. id_objects = ID; object_type = Type; object_subtype = subtype I; object_subtype_other = subtype II; object_location = location; inventory_no = inv no; object_location_detail = acquisition; object_provenance = provenance; object_provenance_detail = provenance detail; object_provenance_reconstructed = provenance (reconstructed); object_material = material; object_text_format = text; object_image_format = image; object_height = height; object_length = length; object_width = width; measurement_unit = cm; object_condition = state of preservation;  notes = notes; notes = notes;  weblink = weblink; literature = bibliography; object_component = x (aus sql db löschen); to_do = x (nicht aus sql db löschen); object_technique = x (nicht aus sql db löschen); object_description = x (aus sql db löschen);  
+--> für titles id = ID; titles_translit = title; titles_translat_engl = translation; titles_index = reference; field4 = gender; gott_kult = authority; ad_sec = place of employment (administrative); region = place of employment (topographic); field2 = field of profession; field3 = professional specialization; field5 = profession; titel_hierarch = hierarchical position; titel_kern = title's core; titel_spez_taetigkeit = specialization (profession); titel_spez_gott_koenig_pers = specialization (authority); titel_spez_institution = specialization (administrative place of employment); titel_spez_toponym = topographical place of employment; titles_translat = x (nicht aus sql db löschen);field6 = x (nicht aus sql db löschen)
+- zusätzliche Kategorien für linke Spalte (nur Objekte, die mt Bildern verknüpft sind, Date, Tombs und Pivot tables für Objekttypologie, Objekttlocation, Namen, Titelgruppen, Objektherkunft, etc.) 
+- generelles Design anpassen, Logo, Metadaten etc. (Schrift Avenir Next, Umschrift für Personennamen)
 - Testversion mit Zenodo verknüpfen, DOI erstellen
 - Workflow testen:   
 -- aktuelle Version aus SQL exportieren (PHP)  
@@ -9,4 +12,4 @@
 -- Versionierung  
 -- kompletten Code auf Annes Github Account
 - Bilder auf Github und in Visualisierungsmaske einbinden
-
+- Umschriftsfont für Personennamen
